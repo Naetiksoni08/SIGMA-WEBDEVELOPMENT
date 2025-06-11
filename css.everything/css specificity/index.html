@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+    <style>
+        /* the specificity value is 1 */
+        h1 {
+            color: green;
+            /*  color: green !important; */
+        }
+
+        /* the specificity value is 10 */
+        .yellow {
+            color: purple;
+
+        }
+
+        /* the specificity value is 10 */
+        .cred {
+            color: yellow;
+
+        }
+
+        /* the specificity value is 10 */
+        .cpurple {
+            color: blue;
+        }
+
+        /* this is called attribute selector */
+        /* the specificity value is 10 */
+        [data-x="a"] {
+            color: red;
+        }
+
+        /* if we have two selectors then the value will be different and it will be added */
+
+        h1.orange {
+            color: orange;
+        }
+
+        /* h1 is element selector and orange is class selector */
+        /* the specificity value is 11 */
+        /* so orange will be applied */
+
+        a.harryclass.rohan-class[href]:hover {
+            color: red;
+            /* a is a element selector 1 classs selector is harryclass so 10 + rohan class 10+href is attribute selector so 10+hover is pseudo selector so 20 so the specificity value is 41 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="orange yellow cred cpurple" data-x="a">Css Specificity</h1>
+        <!-- if data ki value a hai toh  -->
+
+    </div>
+
+
+</body>
+
+</html>
+<!-- Specificity means how much weight a selector has.
+basically priority of the selector
+now here i have made 3 classes for the same h1 tag -->
+<!-- now if i apply a different color to all the classes then which one will apply this is selected through Specificity -->
+<!--now here comes the concept of last in first out jo bhi element ki value last mai likhh hai wo priority hai -->
+<!-- so here the last value will be applied -->
+<!-- so the output will be blue -->
+<!-- if i change the order or posiition of the class then the last class will be applied -->
+<!-- this is callled Position and order of appearance: the order in which your CSS rules appear -->
+<!-- every selector has a different specificity value -->
+<!-- the more the specificity value the more priority it has -->
+<!-- <Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector -->
+<!-- usually the priority order is like this -->
+<!-- inline style means <h1 style="color: red;">Css Specificity</h1> -->
+<!-- it has the highest priority but we can override it by using the !important keyword -->
+<!-- the example for important is  h1{
+            color: green !important;
+        } -->
+<!-- note important is the only way to override the inline style -->
+<!-- now we will learn how to calculate the specificity -->
+<!-- Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000 -->
+<!-- these are the values of the selectors -->

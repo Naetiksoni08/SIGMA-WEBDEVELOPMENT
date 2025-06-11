@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        /* html is the route element  */
+
+        .box {
+            border: 2px solid black;
+            /* width: 230px; */
+            width: 80vw;
+            font-size: 30px;
+            margin: auto;
+            background-color: yellow;
+            /* this vw mean that 1vw means 1% of the whole screen when i say 80 vw this means im saying 80% width of the whole screen  */
+            /* same for the height 1vh means 1% of the whole screen when i say 50vh this means im saying 50% heightof the whole screen  */
+            /* vw is viewport width */
+            /* vh is viewport height */
+            /* vmin is viewport min */
+            /* vmax is viewport max */
+
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 80vw;
+            margin: 20px auto;
+            background-color: yellow;
+            font-size: 18px;
+            min-height: 80vh;
+        }
+
+        /*  this 20 px in margin is for top and bottom */
+        .container p {
+            font-size: 2em;
+            font-size: 2rem;
+            border: 20px solid red;
+            width: 50%;
+        }
+
+        /* the percentage thing means that parent element ki width ka 50% */
+        /* parent was container and child was p */
+
+        /* if i say 2em this means 2 times the font size of the parent element which is 18px so 2*18px = 36px */
+        /* basically it will inherit the font size of the parent element */
+        /* em means inherit karke font size se usko jitna milna wala tha uska 2 guna  */
+        /* by default 16 px hoti h value */
+
+        /* rem means root element that is html uska 2 guna */
+        .mycont {
+            border: 2px solid black;
+            width: 80vw;
+            margin: 20px auto;
+            background-color: aqua;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit dolorem ea beatae inventore facere nulla,
+            excepturi qui, quisquam quis, recusandae et ipsum distinctio ipsa dolor. Obcaecati excepturi praesentium
+            exercitationem quo? Non iusto sunt odit ad soluta, quo vel blanditiis et! Ut molestias accusantium libero
+            debitis.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dicta tempora praesentium dolorem error quaerat
+            quos animi delectus adipisci ab ad, cumque libero quisquam, nihil quod iste! Voluptas porro tenetur quasi
+            eius officiis deleniti eligendi perferendis modi fugiat atque eveniet, ullam minus iure laboriosam ad magnam
+            illo rerum aperiam explicabo. Voluptas rem sit soluta voluptatibus aut accusamus blanditiis iste, fugit
+            culpa, excepturi, eum quis sequi eos? Deleniti, eum minus? Dolorum expedita mollitia quisquam, cum corrupti,
+            neque est quia accusamus iusto quo id. Hic pariatur laudantium praesentium ipsam ipsa soluta atque eius
+            explicabo facilis. Consequatur explicabo atque, cupiditate numquam deserunt obcaecati saepe porro odio
+            aperiam ab impedit neque distinctio fuga. Repellat debitis reprehenderit, vel natus alias dolores voluptas,
+            ipsum quas facilis magnam in quam sunt excepturi eos minima doloremque perferendis asperiores earum
+            voluptatum consequuntur officiis esse. Officia obcaecati vitae soluta doloremque eius sunt aspernatur
+            tempore illo, perspiciatis perferendis voluptate optio repellendus voluptates consequuntur earum nemo rem
+            libero tenetur recusandae ullam autem. Molestiae reprehenderit rem animi repellat explicabo repellendus.
+            Maxime tenetur, quo molestiae eum optio error assumenda eaque, nam repellat quaerat, enim consectetur
+            perspiciatis! Quisquam quas enim nostrum. Nesciunt harum, ut aut quidem unde soluta dolore exercitationem
+            nihil vero provident accusamus illo. Non voluptates animi voluptas eum fuga odit, voluptatibus odio.
+            Expedita fuga magni fugiat excepturi delectus sit vero dolorum blanditiis veniam alias, nisi porro
+            reprehenderit ad ex magnam, omnis cupiditate suscipit! Reprehenderit atque quod repellendus est minima iste
+            ipsam ea harum tempora doloremque pariatur beatae adipisci quaerat, commodi temporibus, quia laboriosam.
+            Por
+            .</p>
+    </div>
+    <div class="mycont">
+        hello i am another container
+    </div>
+</body>
+
+</html>
+
+<!-- THERE IS SOMETHING CALLED AS VMIN AND VMAX -->
+<!-- I MEAN TRY TO UNDERSTAND THIS THAT IF I AM ON LAPTOP THEN MERE LIYE V MIN WILL BE HEIGHT BECUASE HEIGHT OF THE LAPTOP IS SMALLER WHEREAS V MAX WILL BE WIDTH AND IF I AM ON MOBILE THEN V MIN WILL BE WIDTH AND V MAX WILL BE HEIGHT -->

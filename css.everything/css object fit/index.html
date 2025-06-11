@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit</title>
+    <style>
+        .cont {
+            height: 434px;
+            width: 488px;
+            border: 2px solid black;
+            background-color: beige;
+            background-image: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D");
+            /* background-position: center center; */
+            background-position: bottom left;
+            background-repeat: repeat-x;
+        }
+         /* img{ */
+            /* /* height: 434px;
+            width: 488px;
+            object-fit: cover; 
+            object-fit: cover; */
+             /* object-position: bottom right; 
+             object-fit: fill; 
+             object-fit: scale-down;
+            object-position: 10px 20px;
+     }   */ 
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+            alt="" srcset=""> -->
+
+    </div>
+
+</body>
+
+</html>
+
+<!--   /* object-fit: contain; */ normal contain mtlb puri image dikha do bhale hi jagah chodh do thodi si -->
+<!-- object-fit: cover;cover mtlb pura box cover karlo box ko note ye joh width aur height hai image ki uske aspect mai ho raha hai sab  -->
+ <!-- now i want ki mai ek specific postion dikhau image mai toh i can use this property  object-fit: cover;
+            object-position: bottom right;-->
+ <!-- by default object fit fill hoti hai property mtlb jitni maine image ki height or width di hai uske according image lag jayegi -->
+  <!-- object-fit: scale-down; with the help of this we can decrease the size of the image-->
+   <!-- object-position: 10px 20px; use this you will get to know what happens to the image -->
+
+   <!--now another thing is background image what i did i commented out the image url and then i simply went to the container  and then usmai i said ki mujhe background image chahiye and usmai maine url likh ke url paste kardia toh ab voh image joh hai voh background ki tarah dikhegi if i want ki image ka koi specific content ya  part dikhe then i will use background postioon i can do top left right bottom left right  -->
+   <!-- now another thing happens is kabhi kabhi the image is too small toh kya hota hai ki image jab samll ho aur usse  mai background laga na chahta hu toh kya hoga image joh hai voh repeat ho jayega for that i can use image background-repeat: no-repeat; or if i want ki sirf x axis mai repaet ho imsage toh i will use image repeat  background-repeat: repeat-x; -->

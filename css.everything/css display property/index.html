@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        /* if u look close when i do display:none then the box is not visible and the space is not visible  */
+        /* if u look close when i do visibility:hidden then the box is not visible but the space is visible  */
+
+       
+            
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        i am a box
+        </div>
+        <div class="box box2"> also a nice box </div>
+    </div>
+
+    <span> i am a good <span> boy </span> </span>
+</body>
+
+</html>
+<!-- span is a inline element where as div is a block element -->
+<!-- when i write i am a good in span and then i make another span then i write boy because it is a inline element i am a good bo  will come in one line  -->
+<!-- but if i do the same for div that then we cant do so becuase div is a block element so now the question is can we make a block element inline element the answer is yes just by doing display:inline -->
+ <!-- so what i did is i decided to give padding and margin to the box but now the catch is that the padding and margin are not working as expected because the box is inline element so now the question is how to apply padding and margin to the box so the answer is just by doing display:inline-block -->

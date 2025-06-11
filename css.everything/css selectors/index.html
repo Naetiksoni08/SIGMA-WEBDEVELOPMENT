@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        /* element selector */
+        /* div{
+            background-color: red;
+        } */
+
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector */
+        div>p {
+            background-color: yellow;
+            color: blue;
+        }
+        /* descendent selector */
+        div p{
+            background-color: yellow;
+            color: red;
+
+        }
+        /* universal selector */
+        * {
+            margin: 0%;
+            padding: 0;
+    }
+    /* pseudo selector */
+    a:visited{
+        color: black;
+    }
+    a:link{
+        color: green;
+    }
+
+    a:active{
+        background-color: red;
+    }
+    a:hover{
+        background-color: yellow;
+    }
+    p:first-child{
+        background-color: aqua;
+    }
+
+    </style>
+   
+</head>
+
+<body>
+    <main class = "one">
+        <p> this is one</p>
+        <p> this is second</p>
+    </main>
+    <div class="red">
+        <article>
+            I Am a div tag
+        <p>This is a paragraph under or inside the div tag</p>
+    </article>
+    </div>
+    <a href="http://www.instagram.com"> Checkout our Instagram</a>
+    <br>
+    <a href="http://www.Facebook.com"> Checkout our Facebook</a>
+ 
+   
+        <div id="green">
+            I Am also good
+        </div>
+   
+
+
+</body>
+
+</html>
+<!-- /*  the disadvange to element selector is whenever i will add a new div tag then its backgroud colour will again get red but what if i dont want the other the div tags background to get red  then what is the alternative to it we will be using another css specific selector */ -->
+
+<!-- /*   now what i did is maine sirf jis div ki class red hai ussi ko background color de diya kese class = red likha aur fir phele wale div ko comment out kia aur .red karke maie access karlia uss div ko jiski class red hai .red means class that is red  */ -->
+
+ <!-- /* same bas jaha pai bhi id green hai vohi wale element ke background ko green karega   */ -->
+
+ <!-- /* now note ki agar mai ek div ke andar article tag daldu aur ye likhu ki div ke andar p tag ka red color kardo aur blue background kardo toh this wont work coz voh ab paragraph tag jo hai voh ab direct child nai raha of div ka coz ab beech mai article tag aah chuka hai so for this we have another selector called descendent selector   */ -->
+
+   <!-- ab kya hua div ke andar article tag ke anadar paragraph tag hai uska background yellow aur color red kardo soo we used descendent selector for this nd iska syntax simple hai div space p mtlb div ke anadar kahi par bhi paragraph tag ho uska color aur background change kardo   */ -->
+
+  <!-- as the name suggest universal selector will get apply on everything on this web page  -->
+

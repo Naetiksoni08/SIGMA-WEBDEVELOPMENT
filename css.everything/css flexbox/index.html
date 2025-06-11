@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: flex;
+            /* justify-content: center; */
+            height: 80vh;
+            align-items: center;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            flex-wrap: row wrap;
+            /* gap: 20px; */
+            /* row-gap: 20px; */
+            column-gap: 20px;
+            
+          
+            /* we have a wrap reverse property also */
+            /* flex flow row wrap is also a property */
+            /* row ke beech mai gap ke liye use   row-gap: 20px; */
+            /* column ke beech mai gap ke liye use column-gap: 20px; */
+            /* now there are some property of for the item also like order */
+        }
+        .item{
+            width: 92px;
+            height: 92px;
+            background-color: red;
+            /* margin: 4px; */
+            border: 2px solid blueviolet; 
+            /* flex-grow: 1; */
+
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+         .item1{
+            /* flex-grow: 2; */
+            align-self: flex-end;
+        } 
+    
+        
+        
+        /* with the help of display flex i can use all th property related to the flexbox  */
+        /* flex box by default ek row mai kardeta hai */
+        /* justify content is used taki elements center mai aah jaye with respect to the row*/
+        /* align items is used taki elements center mai aah jaye with respect to the whole website */
+        /* justify or align  content is only used on the container not on a sinle item */
+        /* justify and align has some properties like flex start, flex end, flex center, flex space between, flex space around, flex space evenly */
+        /* align content is used to align the multiple lines between the item  align-content: center;    align-content: flex-end; */
+        /* gap property is used to provide space between the items note remove margin property before using gap property */
+        /*  <div class="item order-2">3</div> for example mai chahta hu koi box end mai aaye toh mai order property ka use karunga kese order ki class banai maine aur jis bhi element ko mere ko end mai karna hogga uske andar mai koi sabhi order de diya 1 2 3 4 5 anythibg  <div class="item order-2">3</div> */
+        /* flex grwo and shrink bhot rarely used proeprty hai lekin wese baatau toh gow mtlb agar kai uski value 2kardu kiski value ke particular item ki value ko 2 kardu toh voh joh item hai voh 2 box ki jagah lega flex shrink is not important  */
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="item item1"></div>
+   <div class="item"></div>
+   <div class="item "></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+   <div class="item"></div>
+</div>
+</body>
+</html>
+
+<!-- flex box by default ek row mai kardeta hai this is not true flex box flex direction ke hisab se direct hota hai row uski deafult value hoti hai -->
+<!-- flex direction ko column bhi bna sakta hai usse vertically sare boxe aah jayenge and row default value hoti hia voh horizontally boxes aah jayenge -->
+<!-- agar row hai toh box ki upr wali line voh main axis hogi aur left wali line cross axis hogi for row -->
+<!--agar column hai toh box ki upr wali line voh cross axis hogi aur left wali line main axis hogi for column -->
+<!-- same main size and cross size hai for row and column -->
+ <!-- flex wrap is used to prevent from overflowing agar box overflow ho toh next line baki boex aah jaye  -->
+<!-- order property is used to change the order  -->
+ <!-- jitna kam order daldunga utna phele ayega jaise maine order 1 dala aur ek mi maine order 2 dala toh order 2 wala joh hai voh last mai ayega aur order 1 wala just order 2 se 1 phele ayega  -->
+<!-- basically align self is used taki mai koi particular box ko align karna chahu toh for example align self flex end on the first box toh voh end mai ho jayega box mai bolu ki flex start on the 2nd item or the box toh voh starting mai aah jayega  box  -->

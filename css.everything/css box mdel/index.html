@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: pink;
+
+        }
+
+        .box1 {
+            color: green;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+            /* only height when we say means ki ye joh 200 pixel doesnot includes padding and border but when we say box sizing border box it means that ki ye height ke andar padding and border ki height included hai i hope that make a lot of sense */
+
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">Hey i am a box model</div>
+    <div class="box box2">Hey i am another box model</div>
+
+</body>
+
+</html>
+<!-- ek content ke bhar phele padding hoti h fir border aur fir margin -->
+<!--  so what we did was ki kuch properties aisi hongi jisse mai dono box ko dena chahunga but there is possiblity that kuch properties aisi ho jo mai sirf box 1 ya box 2 ko dena chahunga so  -->
+<!-- now browser apni side se kuch padding margins and border default deta h so we will remove them by using universal selector -->
+<!-- total height or width of a content = padding+border+margin and ofc content mtlb jitni content jagah gherega  -->
+<!-- total height or width of a element is = height + left padding+right padding + left border + right border + left margin + right margin  -->
+ <!-- now there is a concept called as margin collapse it says that agar koi bhi do margin hai jinkii margin equal hai for example yaha pai we had 25 px for 1st box and 25 px for second box now joh dono boxes hai unke beech mai joh margin hai voh 50nai hoga voh dono margin ka max hoga that is 25 for example 1 box ka 50 px ka margin and second ka 25 ka then dono ke beech mai jo margin hai voh 50 pixels ka hi hoga -->

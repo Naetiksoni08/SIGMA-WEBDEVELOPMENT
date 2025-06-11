@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: red;
+            width: 50vw;
+            height: 40vh;
+
+
+
+        }
+
+        .box {
+            background-color: blue;
+            width: 5vw;
+            height: 4vh;
+            transition: all 1s ease-in-out 0.5s;
+            /* transition-property: transform,backgroound-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            /* transition-timing-function: cubic-bezier(0.08, 0.83, 0.71, 0.67); */
+            /* transition-delay: 0.5s; */ 
+
+        }
+
+        /* transition property on which property i wanna plly transition */
+        /* transition duration means kinti der tk trasiition ho like here the transition will finish in 3 sec  */
+        /* transition delay means ki kitni der baad transition ho  */
+        .translate {
+            transform: translatex(10vw) translatey(10vh) scale(2);
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- basically transition property is used to make the transition look smooth for example agar mai ye transform: translatex(10vw) translatey(10vh);isko hata du toh ek dum ye hath jayega aur vapas laga du inspect karte hue toh ek dum seit will appear that means transition is not smooth thats where we use transition property  -->
+ <!--basically transition is made up or includes these four thing 
+ transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s;
+but we have a shortend for this and that is transition: all 1s ease-in-out 0.5s; -->
+
+
+<!-- we can also do this transition-property: all; isse all property par lag jayega jaise color and etc like i did in background color -->
+
+<!-- if i want ki mai 2 property ko transition karu toh mai comma karke bhi kar skata hu transiton like this   transition-property: transform,backgroound-color;-->
+
+<!-- we can also make our own transition timing fucntion by streching the joy stick when we do the inspect things cubic-bezier(0.08, 0.83, 0.71, 0.67); -->

@@ -1,0 +1,12 @@
+/* .mtlb class ko target karna  */
+/* #mtlb id ko target karna */
+.red{
+    color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+
+#Firstdiv{
+    /* background-color: yellow;*/
+} 

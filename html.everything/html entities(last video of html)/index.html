@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    3>4
+    this is the code of paragraph &lt;p&gt;&lt;/p&gt;
+    <pre>
+        <p>
+            this is a para
+
+
+            this is after few more lines                and some more
+
+          
+        </p>
+    </pre>
+   copyright &copy;  &nbsp;  &nbsp;     &nbsp;   &nbsp;     &nbsp;     &nbsp;                  codewithnaetik
+   <h1> this is the code for printing subsequence in java </h1>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <pre>
+   <code>
+
+
+ 
+public class subsequence {
+
+	public static void main(String[] args) {
+
+		String ques = "abc";
+
+//		subseq(ques,"");
+
+//		System.out.println(count);
+
+        System.out.println(countsubseq(ques,""));
+        
+	
+	}
+
+
+	// static int count = 0;
+    
+	public static int countsubseq(String ques, String ans) {
+        
+		if (ques.length() == 0) {
+			System.out.println(ans);
+			// count++;
+			return 1;
+            
+		}
+		char ch = ques.charAt(0);
+        
+		int a1 = countsubseq(ques.substring(1), ans);
+        
+		int a2 = countsubseq(ques.substring(1), ans + ch);
+        
+		return a1 + a2;
+        
+	}
+
+
+	public static void subseq(String ques, String ans) {
+        
+		if (ques.length() == 0) {
+            
+			System.out.println(ans);
+            
+			// count++;
+			return;
+            
+		}
+		char ch = ques.charAt(0);
+        
+		subseq(ques.substring(1), ans);
+        
+		subseq(ques.substring(1), ans + ch);
+        
+	}
+
+}
+
+   </code>
+</pre>
+
+</body>
+</html>
+
+<!-- html entites are used if the language colides with the html syntax -->
+ <!-- &lt;  for <
+&gt;  for > -->
+<!-- if i want copyright sign at the end of the web page then use &copy; for © -->
+ <!-- we know extra spcaes are ignored by html on the web page so if we want ki extra space aaye then use &nbsp  jitni bar &nbsp utini bar 1 space-->
+<!-- if u want to write a code in ur website then use code tag  -->
+ <!-- ab ek tarika hai ki code tag ko use karu aur space dal ne ke liye mai ya toh enter karu har ek line ke baad cronology mai ya fir mai br tag ka use karu isse kafi aacha solution ye hai ki mai code tag ko pre tag mai daldu usse kya hoga mera automatically format ho jayega code aur spcae fir mai accordingly dalskata hu -->
+  <!-- we will use prism css or js to style this code -->
+   <!--  agar ye code wali cheez nai samjh aai toh pre tag ko hata ke dekh kya haal ho jata hai web page or code ka aur fir laga ta rahe br tag  -->
+      <!-- &lt;  for <
+&gt;  for > --> 
+<!-- ye cheez yaad rakhio  -->

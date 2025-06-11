@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design this Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .parent {
+            position: absolute;
+        }
+
+        .box1 {
+            width: 100vw;
+            height: 20vh;
+            position: sticky;
+            top: 0;
+            background-color: rgb(145, 15, 36);
+        }
+
+        ul li {
+            border-radius: 7px;
+            font-size: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 104px;
+            list-style: none;
+            display: inline;
+
+        }
+
+        ul li a:hover {
+            color: white;
+            background-color: black;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        .box2 {
+            width: auto;
+            height: 90vh;
+            background-color: green;
+            position: relative;
+            top: 5px;
+        }
+
+        .box3 {
+            width: 45vw;
+            height: 80vh;
+            background-color: bisque;
+            position: relative;
+            top: 36px;
+            left: 30px;
+
+        }
+
+        .box4 {
+            margin-left: 700px;
+            height: 80vh;
+            width: 45vw;
+            background-color: yellow;
+            position: relative;
+            bottom: 565px;
+            left: 65px;
+
+        }
+
+        .box5 {
+            height: 20vh;
+            width: 95vw;
+            border-radius: 30px;
+            border: 8px solid black;
+            background-color: blue;
+            color: white;
+            position: relative;
+            left: 20px;
+            bottom: 450px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 45px;
+
+        }
+
+        footer {
+
+            width: 100vw;
+            height: 20vh;
+            background-color: beige;
+            border: 7px solid rgb(240, 240, 139);
+            position: relative;
+            bottom: 300px;
+            font-size: 50px;
+            text-align: center;
+
+        }
+
+        footer button {
+            background-image: url(https://indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2023/05/19/battleground.jpg?itok=3kMr8ZaA);
+            position: fixed;
+            bottom: 20px;
+            left: 93vw;
+            width: 70px;
+            height: 70px;
+            background-size: 100px;
+            background-position: center center;
+            border-radius: 45%;
+            border: 3px solid black;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1">
+            <nav>
+                <header>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </header>
+
+            </nav>
+        </div>
+        <div class="box2">
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5">
+                <p>Welcome to the Ultimate Sigma Web Development Express.
+                    This is the newly Developed Sigma website.I hope you have a wonderful and a safe Ride
+                    "Because We are gonna Raise The Bar Like Anything" !!
+                </p>
+            </div>
+            <footer><button></button>Hey this is a footer !!</footer>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

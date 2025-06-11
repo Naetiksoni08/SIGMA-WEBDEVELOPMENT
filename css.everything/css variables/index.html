@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+        :root {
+            --color: rgb(248, 24, 165);
+            --secondary-color: rgb(133, 209, 18);
+            --border-color: 3px solid var(--secondary-color);
+            --defpad: 10px;
+            --fontsize:20px;
+            --defop: 0.2;
+
+        }
+
+        /* this is like we are declaring a global variable */
+        /* we will always declare it in the root  */
+        /* now what happpens if the variable name is not found then we will give a backup color how  */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+           padding: var(--defpad);
+            --border-color: 3px solid black;
+           border: var(--border-color);
+           opacity: var(--defop);
+         
+
+        }
+
+
+        ul li:first-child {
+            --color: rgb(239, 58, 13);
+            background-color: var(--color,blue ); 
+          
+        }
+        /* now this is called local variable what i did is if i want that ul ke andaar jo li hai uska colour chnage ho jaye toh maine simply call kia background-color var(--color) and then maine apna color dia jo mai chahta hu */
+
+
+        .nav {
+            background-color: var(--color);
+            --fontsize: 30px;
+            font-size: var(--fontsize); 
+        }
+
+        .container {
+            background-color: var(--secondary-color);
+            font-size: var(--fontsize);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Login</li>
+
+        </ul>
+
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In vero accusantium similique mollitia, excepturi,
+            nam placeat reprehenderit quibusdam hic molestias adipisci provident assumenda doloribus voluptas! Ullam
+            odit voluptatibus ea non temporibus eveniet tempore, nobis rem cumque libero fuga, quos, dolore nesciunt
+            accusamus corporis! Labore, illo.
+        </p>
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- it not like that i can only use vairbles in css to change the colour i can use it for other things also like border here is a example of border  border: 3px solid var(--secondary-color); this will simply call the secondar colour and the bordercolour will be green which was in the secondary color  -->
+
+
+<!--  --border-color: 3px solid black;
+           border: var(--border-color);
+ for example maine root mai declare kia hai border-color and then maine ul li mai bhi declare kia hai border-color and then i call it by using border: var(--border-color); but iwant the colour should be black toh maine usse black krdia using local vairbale will override the global variable  -->
+
+
+ <!-- --defpad: 10px;
+ padding: var(--defpad); -->
+
+<!--   --fontsize:20px; -->
+<!-- font-size: var(--fontsize); -->

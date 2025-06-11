@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 3px solid black;
+            background-color: beige;
+            /* transform: rotate(45deg); */
+            transform: rotate(55deg);
+            /* transform: rotatez(40deg); */
+            transform: scale(1.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transform:skew(5deg)*/
+            /* transform: translatey(34%) skew(9deg) translatex(9%); */
+            
+
+        }
+
+
+        .container {
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- transform: rotate(45deg); with the help of this we can rotate the box.... we use the unit as degree and there is another unit which we can use and that is turn  -->
+<!-- transform: rotate(0.25turn); ab ye turn 360 degree ka 0.25 percent hogaya we have 0.25 as 90 then 0.5 then 0.75 ns then 100 which is fully rotated  -->
+<!-- transform: rotatex(40deg); ye x axis ke around rotate hogaya  -->
+<!--rotate y axis ke arount rotate hojayega and same goes for z axis  -->
+<!-- box ko big karne ke liye transform: scale(1.5); we have this so hum same x ,y,and z axis mai kar sakte hai bada -->
+<!--   transform:skew(5deg) again we have this run kark you will be able to understand   -->
+<!-- note we have skew available in both x and y axis but not in z axis  -->
+ <!-- we have another property named translate in the transform css thing so   transform: translatey(34px); basiclally it is the most used property x se aage badh jayega y se niche aah jayega then we can use the  units like %,px  -->
+  <!--if we want to apply multiple property ek sath then we can write the syntax like this  transform: translatey(34%) skew(9deg) translatex(9%);  -->
+  <!-- ek transform origin hota hai uski by default joh value hoti hai voh 0 0 hoti hai basically kuch nai h rotate joh hai voh agar uski value increase kardu the 0 0 origin par rotate hoga agar mai value bada du origin ki toh ek naya origin point hoga vaha se rotate hoga naya origin point value ke hisab se hi hoga agar jaise 0 tha aur mai 30 kardu toh aage badh jayega origin  ;point aur vahi se rotate hoga  -->
+
